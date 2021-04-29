@@ -1,6 +1,6 @@
 {
   "name": "@sentinel-one/ngx-monaco-editor",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "private": false,
   "description": "Monaco Code Editor for Angular (ngx-monaco-editor Fork)",
   "keywords": [
@@ -28,7 +28,7 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": ">=9.0.0",
-    "@angular/core": ">=9.0.0"
+    "@angular/common": ">=11.0.0",
+    "@angular/core": ">=11.0.0"
   }
 }
