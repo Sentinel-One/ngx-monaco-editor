@@ -23,7 +23,7 @@ Add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].
   "options": {
     {
       "assets": [
-        { "glob": "**/*", "input": "node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
+        { "glob": "**/*", "input": "node_modules/@sentinel-one/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
       ],
       ...
     }
@@ -41,7 +41,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MonacoEditorModule } from 'ngx-monaco-editor';
+import { MonacoEditorModule } from '@sentinel-one/ngx-monaco-editor';
 
 @NgModule({
   declarations: [
@@ -150,7 +150,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor';
+import { MonacoEditorModule, NgxMonacoEditorConfig } from '@sentinel-one/ngx-monaco-editor';
 import { AppComponent } from './app.component';
 
 const monacoConfig: NgxMonacoEditorConfig = {
