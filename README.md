@@ -14,7 +14,7 @@ Supports all the options available in monaco-editor [Monaco Editor Options](http
 
 Install from npm repository:
 ```
-npm install ngx-monaco-editor --save
+npm install @sentinel-one/ngx-monaco-editor --save
  ```
  
 Add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].architect.build` (to make monaco-editor lib available to the app):
