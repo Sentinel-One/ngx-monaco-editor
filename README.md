@@ -14,7 +14,7 @@ Supports all the options available in monaco-editor [Monaco Editor Options](http
 
 Install from npm repository:
 ```
-npm install ngx-monaco-editor --save
+npm install monaco-editor ngx-monaco-editor --save
  ```
  
 Add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].architect.build` (to make monaco-editor lib available to the app):
@@ -23,7 +23,24 @@ Add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].
   "options": {
     {
       "assets": [
-        { "glob": "**/*", "input": "node_modules/@sentinel-one/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
+        { "glob": "**/*", "input": "node_modules/monaco-editor", "output": "assets/monaco-editor" }
+      ],
+      ...
+    }
+    ...
+  },
+  ...
+}
+ ```
+
+
+For Angular 6 and below, add the glob to assets in `angular.json`
+```typescript
+{
+  "apps": [
+    {
+      "assets": [
+        { "glob": "**/*", "input": "../node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
       ],
       ...
     }
@@ -154,7 +171,7 @@ import { MonacoEditorModule, NgxMonacoEditorConfig } from '@sentinel-one/ngx-mon
 import { AppComponent } from './app.component';
 
 const monacoConfig: NgxMonacoEditorConfig = {
-  baseUrl: 'app-name/assets', // configure base path for monaco editor default: './assets'
+  baseUrl: 'app-name/assets', // configure base path cotaining monaco-editor directory after build default: './assets'
   defaultOptions: { scrollBeyondLastLine: false }, // pass default options to be used
   onMonacoLoad: () => { console.log((<any>window).monaco); } // here monaco object will be available as window.monaco use this function to extend monaco editor functionalities.
 };
