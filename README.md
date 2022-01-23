@@ -1,4 +1,11 @@
-A maintained version of the ngx-monaco-editor wrapper 
+A maintained version of the ngx-monaco-editor wrapper to support newer Angular versions.
+
+NOTE: As of version 13.0.0 this wrapper will NOT support the older view-engine.
+
+DISCLAIMER TESTER APP DEPRECATION- As of Angular 13 We're not supporting the editor-tester run anymore and recommend 
+you not to use an older versions of the framework and its devtools for security reasons.
+
+
 
 # Monaco Editor Component for Angular
  
