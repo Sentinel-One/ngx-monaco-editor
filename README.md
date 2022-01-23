@@ -4,7 +4,7 @@ NOTE: As of version 13.0.0 this wrapper will NOT support the older view-engine.
 
 # Monaco Editor Component for Angular
  
-- Angular 9 and above 
+- Angular 12 and above 
 
 Using this Module you can utilize the Monaco Editor as an Angular Component. Feel free to contribute, raise feature requests and make it better.
 
