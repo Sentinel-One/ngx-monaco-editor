@@ -14,6 +14,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "ng build --project=editor-tester --base-href=editor-tester",
+    "build:prod": "ng build --prod --project=editor-tester --base-href=editor-tester",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-editor": "npm run copy:readme && npm run copy:typings && ng build editor --configuration production && npm run copy:types && npm run copy:editor",

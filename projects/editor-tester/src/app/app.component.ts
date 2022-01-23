@@ -14,7 +14,7 @@ import { DiffEditorModel, NgxEditorModel } from 'editor';
     <div style="height: 100px">
         <ngx-monaco-editor style="height: 100%" [options]="options" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor>
     </div>
-    
+
     <ngx-monaco-editor *ngIf="showMultiple" [options]="options" [(ngModel)]="code"></ngx-monaco-editor>
 
     <pre>{{code | json}}</pre>
@@ -94,7 +94,7 @@ export class AppComponent implements OnInit {
     this.model = {
       value: this.jsonCode,
       language: 'json',
-      uri: monaco.Uri.parse('a://b/foo.json')
+      uri: (window as any).monaco.Uri.parse('a://b/foo.json')
     };
     // let line = editor.getPosition();
     // let range = new monaco.Range(line.lineNumber, 1, line.lineNumber, 1);
